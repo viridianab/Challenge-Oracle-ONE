@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="icon" sizes="192x192" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="assets/img/logo.svg" alt="Alura Logotipo">
+            </a>
+        </nav>
+        <!-- Content -->
+        <section class="content">
+            <div class="container">
+                <div class="content--textarea">
+                    <textarea id="initialText" required></textarea>
+                    <span class="blink"></span>
+                </div>
+                <div class="content--buttons">
+                    <p class="alert"><img src="assets/img/exclamation.svg" alt="Alerta">Solo letras minúsculas y sin acentos</p>
+                    <button class="btn btn-primary" id="btnEncrypt" onclick="encript()">Encriptar</button>
+                    <button class="btn btn-secondary" id="btnDecrypt" onclick="decript()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <!-- Result -->
+        <section class="results">
+            <div class="container">
+                <div class="results--textarea">
+                    <div id="placeholder">
+                        <img src="assets/img/placeholder.png" alt="placeholder">
+                        <p class="title">Ningún mensaje fue encontrado</p>
+                        <p class="subtitle">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div id="results--show">
+                    <textarea id="result" disabled></textarea>
+                    <button class="btn btn-secondary" id="btnCopy" onclick="copy()">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/viridianabg/" target="_blank"><img src="assets/img/icon_linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="https://github.com/viridianab" target="_blank"><img src="assets/img/icon_github.png" alt="Github"></a></li>
+        </ul>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
